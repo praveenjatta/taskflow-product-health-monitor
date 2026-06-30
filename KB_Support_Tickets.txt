@@ -1,0 +1,208 @@
+# TaskFlow — Support Ticket Analytics Knowledge Base (Zendesk)
+## Last Updated: June 20, 2026
+## Reporting Period: June 2026 (MTD) vs. May 2026
+
+---
+
+## MONTHLY TICKET VOLUME TREND
+
+### Overall Volume (Last 6 Months)
+- January 2026: 1,847 tickets
+- February 2026: 1,902 tickets (+3.0% MoM)
+- March 2026: 1,988 tickets (+4.5% MoM)
+- April 2026: 2,134 tickets (+7.3% MoM)
+- May 2026: 2,389 tickets (+11.9% MoM)
+- June 2026 (MTD, through June 20): 1,994 tickets — on pace for ~2,990 (+25.1% MoM projected)
+
+### Volume by Week (Last 8 Weeks)
+- Week of April 28: 521 tickets
+- Week of May 5: 548 tickets
+- Week of May 12: 579 tickets
+- Week of May 19: 601 tickets
+- Week of May 26: 661 tickets
+- Week of June 2: 703 tickets
+- Week of June 9: 724 tickets
+- Week of June 16: 748 tickets (partial — through June 20)
+
+### Key Driver of June Surge
+Primary driver: iOS app crash bug introduced in v4.2.1 (released May 28). Crash-related tickets up 312% since release. Secondary driver: increase in new user signups from Q2 marketing campaign — new user onboarding tickets up 44%.
+
+---
+
+## TICKET CATEGORY BREAKDOWN
+
+### June 2026 MTD (1,994 tickets total)
+
+| Category | Tickets | % of Total | vs. May % |
+|---|---|---|---|
+| Bug Reports | 687 | 34.4% | +18.2 pts |
+| How-To / Usage Questions | 441 | 22.1% | -3.1 pts |
+| Feature Requests | 312 | 15.6% | -2.8 pts |
+| Integration Issues | 298 | 14.9% | +4.1 pts |
+| Billing Questions | 256 | 12.8% | -1.4 pts |
+| Account / Access Issues | 0 | 0.2% | no change |
+
+### Bug Reports Subcategories (687 tickets)
+- iOS app crash on file attachment: 287 tickets (41.8%)
+- Android notification duplicates: 112 tickets (16.3%)
+- Offline sync data loss: 98 tickets (14.3%)
+- Incorrect points/rewards display: 67 tickets (9.8%)
+- Other bugs: 123 tickets (17.9%)
+
+### Integration Issues Subcategories (298 tickets)
+- Slack integration not syncing bidirectionally: 89 tickets (29.9%)
+- HubSpot read-only limitation questions: 74 tickets (24.8%)
+- Zapier webhook failures: 61 tickets (20.5%)
+- API authentication errors: 48 tickets (16.1%)
+- Other integrations: 26 tickets (8.7%)
+
+---
+
+## AVERAGE RESOLUTION TIME BY CATEGORY
+
+### June 2026 (business hours)
+
+| Category | Avg First Response | Avg Resolution Time | SLA Target | SLA Met? |
+|---|---|---|---|---|
+| Bug Reports | 18.4 hours | 4.2 days | 4 hours / 3 days | ❌ Breached |
+| How-To Questions | 6.1 hours | 1.1 days | 4 hours / 1 day | ⚠️ Near miss |
+| Feature Requests | 22.7 hours | 5.8 days | 24 hours / 5 days | ✅ Met |
+| Integration Issues | 14.9 hours | 3.7 days | 8 hours / 3 days | ❌ Breached |
+| Billing Questions | 3.8 hours | 0.9 days | 2 hours / 1 day | ⚠️ Near miss |
+| Account / Access | 2.1 hours | 0.4 days | 2 hours / 1 day | ✅ Met |
+
+**Note:** Bug report first response SLA (4 hours) is being breached consistently due to volume spike. Engineering escalation backlog has grown from 12 tickets (May 1) to 47 tickets (June 20).
+
+---
+
+## TOP 10 TICKET TOPICS THIS MONTH
+
+Ranked by ticket count, June 2026 MTD.
+
+| Rank | Topic | Tickets | Trend |
+|---|---|---|---|
+| 1 | iOS crash on file attachment (v4.2.1 bug) | 287 | 🔴 New — spiked May 28 |
+| 2 | How to set up workspace for first time | 198 | 🟡 +12% vs. May |
+| 3 | Android duplicate notifications | 112 | 🔴 New — spiked June 2 |
+| 4 | Slack integration not updating bidirectionally | 89 | 🟡 +8% vs. May |
+| 5 | Offline sync not working / data loss | 87 | 🔴 +34% vs. May |
+| 6 | How to invite team members | 76 | 🟢 Stable |
+| 7 | HubSpot integration — read-only limitation | 74 | 🟡 +15% vs. May |
+| 8 | Billing — upgrade/downgrade plan | 68 | 🟢 Stable |
+| 9 | Zapier webhook failures | 61 | 🟡 +22% vs. May |
+| 10 | How to use task dependencies | 58 | 🟢 Stable |
+
+---
+
+## ENTERPRISE ACCOUNTS WITH 5+ OPEN TICKETS (CHURN RISK)
+
+Accounts flagged for immediate Customer Success outreach. Criteria: 5+ open tickets AND account value >$500/month.
+
+### 🔴 HIGH CHURN RISK (8+ open tickets)
+
+**Meridian Capital Partners**
+- Plan: Enterprise (62 seats, $1,240/month)
+- Open tickets: 14
+- Oldest open ticket: 22 days (iOS crash, assigned to Tier 2)
+- Ticket themes: iOS crashes (6), Salesforce integration request (3), billing dispute (2), offline sync (3)
+- Last CSM contact: May 15, 2026
+- Risk signal: Account owner sent email on June 12 asking about competitor pricing
+
+**NovaTech Solutions**
+- Plan: Enterprise (47 seats, $940/month)
+- Open tickets: 11
+- Oldest open ticket: 18 days (Zapier webhook failure)
+- Ticket themes: Zapier failures (4), Microsoft Teams integration request (4), API errors (3)
+- Last CSM contact: May 28, 2026
+- Risk signal: No CSM assigned — requests have gone unanswered
+
+**Apex Retail Group**
+- Plan: Enterprise (38 seats, $760/month)
+- Open tickets: 9
+- Oldest open ticket: 15 days (offline sync data loss)
+- Ticket themes: Offline sync (4), Android notifications (3), onboarding (2)
+- Last CSM contact: June 3, 2026
+- Risk signal: Three team members left 2-star app store reviews in the last 30 days
+
+### 🟡 MEDIUM CHURN RISK (5-7 open tickets)
+
+**BlueSky Marketing Agency**
+- Plan: Pro (22 seats, $638/month)
+- Open tickets: 7
+- Oldest open ticket: 11 days (HubSpot integration)
+- Ticket themes: HubSpot (3), iOS crash (2), billing (2)
+- Risk signal: Renewal due July 15, 2026 — no renewal confirmation received
+
+**Cornerstone Legal LLP**
+- Plan: Enterprise (29 seats, $580/month)
+- Open tickets: 6
+- Oldest open ticket: 9 days (onboarding setup)
+- Ticket themes: Onboarding (3), mobile performance (2), how-to (1)
+- Risk signal: Only 40% seat activation — team has not fully adopted the product
+
+**Riverdale Health Systems**
+- Plan: Enterprise (24 seats, $480/month)
+- Open tickets: 5
+- Oldest open ticket: 7 days (Teams integration request)
+- Ticket themes: Teams integration (3), API authentication (2)
+- Risk signal: IT admin opened a formal RFP for alternative tools on June 8
+
+---
+
+## CSAT SCORES BY SUPPORT AGENT
+
+### June 2026 MTD (1,447 CSAT responses received, 72.6% response rate)
+
+| Agent | Tickets Handled | CSAT Score | Avg Resolution Time | Escalation Rate |
+|---|---|---|---|---|
+| Maya Johnson | 312 | 4.7 / 5.0 | 1.2 days | 4.2% |
+| Ryan Park | 287 | 4.5 / 5.0 | 1.4 days | 5.1% |
+| Sophia Turner | 264 | 4.4 / 5.0 | 1.6 days | 6.8% |
+| Diego Reyes | 241 | 3.9 / 5.0 | 2.8 days | 12.4% |
+| Priya Anand | 228 | 3.7 / 5.0 | 3.1 days | 14.9% |
+| James O'Brien | 198 | 3.4 / 5.0 | 3.6 days | 18.2% |
+| Natalie Cross | 174 | 3.2 / 5.0 | 4.1 days | 21.8% |
+| Team Average | — | 3.97 / 5.0 | 2.3 days | 11.9% |
+
+**Notes:**
+- Diego Reyes, Priya Anand, James O'Brien, and Natalie Cross are handling the highest proportion of iOS crash tickets, which are complex and require engineering escalation — this inflates their resolution times and escalation rates.
+- Maya Johnson and Ryan Park are primarily handling how-to and billing tickets, which resolve faster.
+- Team CSAT target is 4.3 / 5.0 — current team average of 3.97 is below target.
+
+---
+
+## ESCALATION RATE
+
+### Overall Escalation Summary (June 2026 MTD)
+- Total tickets escalated to Tier 2: 187 (9.4% of total)
+- Total tickets escalated to Engineering: 47 (2.4% of total)
+- Total tickets escalated to VP Customer Success: 8 (0.4% of total)
+
+### Escalation Rate Trend (MoM)
+- March 2026: 6.1%
+- April 2026: 6.8%
+- May 2026: 8.2%
+- June 2026 (projected): 11.9%
+
+### Top Reasons for Engineering Escalation (47 tickets)
+1. iOS crash on file attachment: 29 tickets (confirmed v4.2.1 bug — fix in progress, target release June 27)
+2. Offline sync data loss: 11 tickets (root cause identified — race condition in sync queue)
+3. Zapier webhook intermittent failures: 7 tickets (under investigation)
+
+---
+
+## ADDITIONAL METRICS
+
+### Ticket Reopens
+- Reopen rate: 14.2% (tickets reopened after first resolution)
+- Primary reopen reason: Issue not actually resolved (68%), new related issue discovered (32%)
+
+### Self-Service Deflection
+- Help center article views: 22,847 (June MTD)
+- Estimated tickets deflected by help center: ~340 (based on exit survey)
+- Deflection rate: ~14.6% — below 20% target
+
+### New User Onboarding Tickets
+- Tickets from accounts <30 days old: 441 (22.1% of total volume)
+- Most common new user question: "How do I set up my first workspace?" (198 tickets)
+- Average ticket-to-resolution for new users: 2.1 days

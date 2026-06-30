@@ -1,0 +1,210 @@
+# TaskFlow — User Feedback Knowledge Base
+## Last Updated: June 20, 2026
+
+---
+
+## NPS SURVEY RESULTS
+
+### Current NPS Summary
+- Current NPS Score: 38 (as of June 2026)
+- Previous NPS Score: 45 (March 2026)
+- Change: -7 points over 90 days
+- Survey Response Rate: 18.4% (1,797 responses from 9,764 customers)
+- Promoters (9-10): 412 respondents — 22.9%
+- Passives (7-8): 771 respondents — 42.9%
+- Detractors (0-6): 614 respondents — 34.2%
+
+### NPS by Plan Tier
+- Free tier: NPS = 21
+- Pro tier ($29/mo): NPS = 41
+- Enterprise tier ($149+/mo): NPS = 52
+
+### NPS Trend (Last 6 Surveys)
+- January 2026: 47
+- February 2026: 46
+- March 2026: 45
+- April 2026: 43
+- May 2026: 40
+- June 2026: 38
+
+---
+
+## TOP DETRACTOR THEMES (NPS Score 0-6)
+
+Analysis of 614 detractor open-text responses. Themes ranked by frequency.
+
+### Theme 1: Mobile App Performance (mentioned by 41% of detractors)
+- App crashes on iOS 17+ devices during task creation
+- Slow load times — average 6-8 seconds to open project view on mobile
+- Offline mode is unreliable — changes made offline don't sync properly
+- Battery drain is "excessive" — multiple users reported 15-20% battery drain per hour
+
+Representative quotes:
+- "The mobile app is basically unusable. It crashes every time I try to attach a file. I'm paying $29/month for a desktop-only tool at this point." — Pro user, June 3, 2026
+- "I travel constantly and need offline mode to work. It doesn't. I lose data almost every week." — Pro user, May 28, 2026
+- "My whole team switched to TaskFlow but the iOS app crashes 3-4 times a day. We're actively evaluating alternatives." — Enterprise user, June 10, 2026
+
+### Theme 2: Onboarding Confusion (mentioned by 29% of detractors)
+- No guided setup wizard for new workspaces
+- Default project templates are too generic — users don't know which to choose
+- Inviting team members requires navigating 4 separate screens
+- "Getting started" emails arrive out of order and reference features users haven't found yet
+
+Representative quotes:
+- "I spent 3 hours trying to set up my first project correctly. There's no clear starting point. I almost cancelled on day 2." — Free user, June 7, 2026
+- "Onboarding is a mess. I needed to watch 6 YouTube tutorials just to understand how workspaces vs. projects vs. boards work. Just show me what to do." — Pro user, May 15, 2026
+
+### Theme 3: Missing Integrations (mentioned by 24% of detractors)
+- No native Salesforce integration (most requested — 187 open votes on feedback board)
+- HubSpot integration exists but is read-only — cannot create tasks from HubSpot deals
+- Slack integration doesn't support bidirectional sync — TaskFlow updates don't post to Slack automatically
+- No Microsoft Teams integration (affects enterprise accounts heavily)
+- Zapier workarounds mentioned frequently as "frustrating band-aid solutions"
+
+Representative quotes:
+- "We use Salesforce for everything. Having to manually copy deals into TaskFlow defeats the purpose. This is a dealbreaker for our team." — Enterprise user, June 1, 2026
+- "The Slack integration is half-baked. I can see tasks in Slack but I can't update them. That's table stakes." — Pro user, May 22, 2026
+
+### Theme 4: Slow Customer Support (mentioned by 18% of detractors)
+- Average first response time reported by users: 2-3 business days
+- Multiple users mention being routed between agents without resolution
+- Pro plan users frustrated they don't have priority support
+- Chat support hours limited to 9am-5pm ET — no coverage for non-US users
+
+Representative quotes:
+- "I submitted a bug report 11 days ago. Still no resolution. Just 'we're looking into it' replies." — Pro user, June 12, 2026
+- "I'm in Australia. Your support is only available during US business hours. I waited 48 hours for a reply to a billing question." — Pro user, June 5, 2026
+
+---
+
+## APP STORE REVIEWS
+
+### iOS App Store — TaskFlow for iOS (v4.2.1)
+Current Rating: 3.6 stars (down from 4.1 six months ago)
+Total Reviews: 2,847 | Recent reviews (last 30 days): 143
+
+**1-Star Reviews (Selected):**
+
+"Crashes constantly on iPhone 15 Pro. Happens every single time I try to open a task with an attachment. Completely unacceptable for a paid app."
+— username: brendan_pm_nyc | June 14, 2026
+
+"Offline mode is broken. I work on planes all the time. Made changes to 3 projects on a flight, none of them synced when I landed. Hours of work gone."
+— username: lara_freelance | June 9, 2026
+
+"App takes 8 seconds to load. My free trial of [competitor] loads in under 2. TaskFlow has a performance problem and doesn't seem to care."
+— username: techstartup_guy | June 2, 2026
+
+**2-Star Reviews (Selected):**
+
+"Good concept, terrible execution on mobile. Desktop version is fine. But I need mobile to work and it barely does. Hoping they fix it — downgrading my review until they do."
+— username: sarah_j_consulting | June 11, 2026
+
+"Onboarding tutorial skips the most important parts. I still don't understand how 'sections' work vs 'milestones.' The documentation is outdated."
+— username: projectmgr_kate | May 30, 2026
+
+"Support took 4 days to reply to my question. When they did, they sent me a link to an article I'd already read. Frustrating."
+— username: marcus_digital | May 25, 2026
+
+**3-Star Reviews (Selected):**
+
+"Decent tool but the mobile app needs serious work. Desktop is 4 stars, mobile is 2 stars. Averaging 3."
+— username: alex_remotework | June 8, 2026
+
+"Missing Salesforce integration. That's the one thing stopping us from going all-in. Otherwise solid."
+— username: revenue_ops_jen | June 1, 2026
+
+### Google Play Store — TaskFlow Android (v4.2.1)
+Current Rating: 3.4 stars (down from 3.9 six months ago)
+Total Reviews: 1,623 | Recent reviews (last 30 days): 89
+
+**1-Star Reviews (Selected):**
+
+"Battery killer. TaskFlow drains my battery faster than Google Maps with navigation on. Uninstalled."
+— username: DavidK_Android | June 13, 2026
+
+"Notifications are broken. I get duplicate notifications for the same task update, sometimes 5-6 times. It's spammy and I can't figure out how to turn them off."
+— username: priya_pm_bangalore | June 6, 2026
+
+**2-Star Reviews (Selected):**
+
+"The Android app hasn't been updated in 6 weeks. iOS seems to get more attention. We're second-class users."
+— username: android_first_user | June 10, 2026
+
+"Slow, crashes, and the UI looks like it was designed for a 2019 phone. Please modernize."
+— username: techteam_miami | May 28, 2026
+
+---
+
+## USER INTERVIEW TRANSCRIPTS
+
+### Interview 1 — Priya Nair, Operations Manager, Fintech startup (Pro Plan, 14 seats)
+Date: June 10, 2026 | Conducted by: Customer Research Team
+
+Interviewer: "Can you walk me through how you use TaskFlow day to day?"
+Priya: "Mostly on desktop, honestly. The mobile app is too slow for me to bother. I tried for about three weeks and gave up. Now I only check it on my laptop. Which is frustrating because the whole reason we chose TaskFlow was so the team could stay updated on the go."
+
+Interviewer: "What's the number one thing you'd fix?"
+Priya: "The mobile experience. And the Salesforce integration — we waste so much time copying data between the two systems. If TaskFlow had a real Salesforce sync, I wouldn't be evaluating other tools right now."
+
+### Interview 2 — James Whitfield, Creative Director, Agency (Pro Plan, 8 seats)
+Date: June 5, 2026 | Conducted by: Customer Research Team
+
+Interviewer: "How was your onboarding experience?"
+James: "Rough. We had no idea what templates to use. The 'agency' template didn't match how we actually work. We ended up rebuilding everything from scratch, which took about a week. A setup wizard that asks you a few questions and configures things for you would have saved us so much time."
+
+Interviewer: "Are you likely to renew?"
+James: "Probably. But we're not expanding our seats until the mobile app is fixed. Two of my team members refuse to use it."
+
+### Interview 3 — Carlos Mendez, Engineering Manager, SaaS company (Enterprise Plan, 47 seats)
+Date: June 8, 2026 | Conducted by: Customer Research Team
+
+Carlos: "The product itself is strong. The integrations are the problem. We're a Microsoft shop — Teams, Azure DevOps, the whole stack. TaskFlow doesn't talk to any of it natively. We're using Zapier to bridge everything and it breaks constantly. We've raised this with our account manager three times."
+
+Interviewer: "How would you rate your support experience?"
+Carlos: "Below average. Response times are too slow for an enterprise account. We don't have a dedicated CSM. When something breaks, we lose a day just waiting for someone to pick up the ticket."
+
+### Interview 4 — Anika Patel, Product Manager, E-commerce company (Pro Plan, 5 seats)
+Date: June 12, 2026 | Conducted by: Customer Research Team
+
+Anika: "I came from Asana and the transition was harder than expected. The terminology is different — what Asana calls 'sections,' TaskFlow calls something else. The help docs are inconsistent. I spent way too long figuring out basic things. I think I'm finally comfortable with it now, three months in. But that's too long."
+
+Interviewer: "What keeps you on TaskFlow?"
+Anika: "Honestly, the reporting. The dashboard is the best I've used. I just wish the rest of the experience matched it."
+
+### Interview 5 — Tom Bergkamp, Freelance Consultant (Pro Plan, 1 seat)
+Date: June 14, 2026 | Conducted by: Customer Research Team
+
+Tom: "I travel a lot and I need the mobile app to work. It doesn't. I've had tasks disappear after editing them offline. I lost a whole project timeline once. Support took 5 days to respond and told me to 'ensure I have a stable connection before editing.' That's not a fix, that's a deflection. I'm cancelling at the end of this month."
+
+---
+
+## IN-APP FEEDBACK SUBMISSIONS
+
+### Feedback collected via in-app widget | June 1–20, 2026
+Total submissions: 318
+
+**Top requested features (by vote count):**
+1. Salesforce native integration — 187 votes
+2. Microsoft Teams integration — 143 votes
+3. Offline mode reliability fix — 128 votes
+4. Time tracking built into tasks — 119 votes
+5. Recurring task templates — 98 votes
+6. Mobile app performance improvements — 94 votes
+7. Bulk task editing on mobile — 76 votes
+8. Custom notification rules — 71 votes
+9. Gantt chart view on mobile — 68 votes
+10. Two-way HubSpot sync — 62 votes
+
+**Selected verbatim submissions:**
+
+"Please fix the iOS crash on file attachments. It's been happening for 6 weeks. This is a regression from v4.1." — Pro user, June 18, 2026
+
+"The onboarding email sequence is confusing. I got an email about 'advanced automation' before I even created my first project." — Free user, June 15, 2026
+
+"Your Slack integration only works one way. If I close a task in TaskFlow, nothing happens in Slack. Basic functionality that your competitors figured out years ago." — Pro user, June 12, 2026
+
+"Support chat is only open during US hours. I'm in the UK. I have a Pro plan and can't get real-time help. Please expand support hours or at least add a chatbot." — Pro user, June 10, 2026
+
+"I love the desktop app. The mobile app makes me want to cancel. Please treat them equally." — Enterprise user, June 8, 2026
+
+"Onboarding for new team members is painful. They have to figure everything out on their own. A short interactive tutorial when someone joins a workspace would help a lot." — Enterprise user, June 6, 2026

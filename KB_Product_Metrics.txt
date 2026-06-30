@@ -1,0 +1,215 @@
+# TaskFlow — Product Metrics Knowledge Base
+## Last Updated: June 20, 2026
+## Data Source: Mixpanel + Stripe + Internal Analytics Dashboard
+
+---
+
+## MOBILE APP USAGE — DAU / MAU
+
+### Current Mobile Metrics (June 2026 MTD)
+- Mobile DAU: 3,847 (down from 4,521 in March 2026 — 14.9% decline)
+- Mobile MAU: 18,234 (June MTD projected — down from 21,410 in March 2026 — 14.8% decline)
+- Mobile DAU/MAU ratio: 21.1% (down from 24.6% in March — indicates reduced engagement frequency)
+- Desktop DAU: 6,129 (up 4.2% vs. March 2026)
+- Desktop MAU: 24,871 (up 3.8% vs. March 2026)
+
+### Mobile DAU Trend (Weekly Average)
+- Week of April 28: 4,312
+- Week of May 5: 4,198
+- Week of May 12: 4,089
+- Week of May 19: 3,977 (notable drop — coincides with v4.2.1 release)
+- Week of May 26: 3,891
+- Week of June 2: 3,844
+- Week of June 9: 3,821
+- Week of June 16: 3,798 (partial week)
+
+### Mobile Usage by Platform
+- iOS users: 11,847 MAU (64.9% of mobile — down 17.2% vs. March)
+- Android users: 6,387 MAU (35.1% of mobile — down 10.3% vs. March)
+- iOS decline is steeper — consistent with v4.2.1 crash bug disproportionately affecting iOS
+
+### Mobile Session Data
+- Avg session length (mobile): 4.2 minutes (down from 6.8 minutes in March)
+- Avg sessions per active user per day: 1.4 (down from 2.1 in March)
+- Most common mobile action: Viewing tasks (42%), Updating task status (28%), Commenting (18%), Creating tasks (12%)
+- Task creation on mobile down 31% vs. March — users abandoning mobile creation flows due to crashes
+
+---
+
+## FREE-TO-PAID CONVERSION FUNNEL
+
+### Current Conversion Rate
+- Free-to-paid conversion rate: 8.4% (trailing 90 days)
+- Previous rate: 11.2% (trailing 90 days as of March 2026)
+- Absolute decline: -2.8 percentage points
+- Relative decline: -25.0%
+
+### Conversion Funnel Stages (June 2026 cohort, first 30 days)
+- Free signups: 4,847
+- Completed onboarding (created first project): 2,913 (60.1% — down from 71.4% in March)
+- Invited at least 1 team member: 1,641 (33.9% of signups)
+- Used product 3+ days in first week (activation threshold): 1,287 (26.6% — down from 34.2% in March)
+- Reached paywall (hit feature limit): 894 (18.5%)
+- Converted to paid (within 30 days): 407 (8.4%)
+
+### Conversion Drop-Off Analysis
+- Biggest drop-off point: Between "completed onboarding" and "activated" (users who don't return after day 1)
+- Onboarding completion rate dropped 11.3 pts since March — primary cause: new user confusion (corroborated by support ticket data)
+- Users who invite a team member convert at 19.2% vs. 4.1% for solo users
+- Time to first conversion: median 8 days (up from 6 days in March — users taking longer to see value)
+
+### Conversion by Acquisition Channel (June cohort)
+- Organic search: 11.3% conversion rate
+- Direct/referral: 10.8% conversion rate
+- Paid social: 6.9% conversion rate
+- Product Hunt / review sites: 14.2% conversion rate
+- Email campaigns: 9.1% conversion rate
+
+### Failed Conversion Reasons (Exit Survey — 312 responses)
+1. "Too complicated to set up" — 34%
+2. "Couldn't get my team to adopt it" — 22%
+3. "Missing integration I needed" — 19%
+4. "Mobile app didn't work well enough" — 14%
+5. "Found a cheaper alternative" — 11%
+
+---
+
+## RETENTION COHORTS BY SIGNUP MONTH
+
+### 30 / 60 / 90-Day Retention (Paid Customers)
+
+| Signup Month | 30-Day Retention | 60-Day Retention | 90-Day Retention |
+|---|---|---|---|
+| January 2026 | 84.2% | 76.1% | 68.4% |
+| February 2026 | 83.7% | 75.4% | 67.2% |
+| March 2026 | 82.9% | 74.8% | 66.1% |
+| April 2026 | 81.4% | 73.2% | — (not yet at 90 days) |
+| May 2026 | 78.6% | — (not yet at 60 days) | — |
+| June 2026 | 75.1% | — | — |
+
+**Trend note:** 30-day retention has declined 9.1 percentage points from January to June cohorts. June cohort at 75.1% is the lowest recorded in the past 12 months. Correlated with mobile app degradation and onboarding issues.
+
+### Retention by Plan Tier
+- Enterprise (90-day): 88.3%
+- Pro (90-day): 64.7%
+- Free-to-paid converted (90-day): 61.2%
+
+### Churn Reasons (Exit Survey — Cancelled Accounts, June 2026, 87 responses)
+1. Mobile app performance issues — 31%
+2. Switched to competitor (Asana, Monday.com, Linear mentioned most) — 28%
+3. Team didn't adopt the product — 21%
+4. Too expensive for the value received — 12%
+5. Missing specific feature/integration — 8%
+
+---
+
+## FEATURE ADOPTION RATES
+
+### Top 10 Features by Active Usage (% of paid accounts using feature at least once in last 30 days)
+
+| Rank | Feature | Adoption Rate | vs. 90 Days Ago | Notes |
+|---|---|---|---|---|
+| 1 | Task creation (desktop) | 96.4% | +0.2% | Core — stable |
+| 2 | Project dashboard view | 91.7% | -1.1% | Stable |
+| 3 | Task comments | 84.3% | -2.4% | Slight decline |
+| 4 | File attachments | 72.1% | -8.9% | Declining — linked to iOS crash bug |
+| 5 | Team member invitations | 68.4% | -3.2% | Slight decline |
+| 6 | Task dependencies | 54.2% | +1.8% | Growing |
+| 7 | Reporting / analytics dashboard | 51.9% | +4.7% | Growing — top-rated feature |
+| 8 | Recurring tasks | 43.6% | +2.1% | Growing |
+| 9 | Mobile task creation | 31.2% | -14.8% | Significant decline — crash impact |
+| 10 | Automations (rule-based triggers) | 28.7% | +6.3% | Growing — power user feature |
+
+**Notable:** File attachments and mobile task creation have seen the largest declines, both directly linked to the v4.2.1 iOS crash bug. Reporting/analytics and Automations are the fastest-growing features.
+
+---
+
+## PERFORMANCE BENCHMARKS
+
+### API Latency (Last 7 Days Average)
+- Task List API (GET /tasks): p50 = 94ms, p95 = 187ms, p99 = 312ms — ✅ Within target (<500ms p99)
+- Task Create API (POST /tasks): p50 = 112ms, p95 = 224ms, p99 = 441ms — ✅ Within target
+- Project Dashboard API: p50 = 218ms, p95 = 487ms, p99 = 891ms — ⚠️ p99 near limit
+- File Upload API: p50 = 1.2s, p95 = 3.4s, p99 = 6.8s — ❌ Degraded (linked to crash bug)
+- Search API: p50 = 67ms, p95 = 134ms, p99 = 278ms — ✅ Within target
+
+### Mobile App Load Times (Measured via RUM — Real User Monitoring)
+- App cold start (iOS): 6.2 seconds average — ❌ Target is <3 seconds
+- App cold start (Android): 4.8 seconds average — ❌ Target is <3 seconds
+- Project list load: 3.1 seconds average — ⚠️ Above 2-second target
+- Task detail view: 1.8 seconds average — ✅ Within target
+
+### Uptime (Last 90 Days)
+- Overall uptime: 99.81% (target: 99.9%)
+- Incidents: 2 incidents in last 90 days
+  - April 3, 2026: 47-minute outage — database failover issue — 1,247 users affected
+  - May 14, 2026: 23-minute degraded performance — CDN routing issue — 3,891 users affected
+- Status page: status.taskflow.io
+
+### Error Rates
+- API 5xx error rate: 0.34% (target: <0.5%) — ✅ Within target
+- Mobile crash rate (iOS): 2.8% of sessions — ❌ Target is <0.5% (driven by v4.2.1 bug)
+- Mobile crash rate (Android): 0.6% of sessions — ⚠️ Slightly above 0.5% target
+
+---
+
+## USER ENGAGEMENT BY PLAN TIER
+
+### Free Tier (5,847 active free users)
+- Avg sessions per week: 2.1
+- Avg tasks created per week: 3.4
+- Avg team size: 1.2 members (most using solo)
+- Most used features: Task creation, project dashboard, task comments
+- Primary conversion blocker: Hitting 3-project limit (41% of free users have hit this)
+- DAU/MAU: 14.2%
+
+### Pro Tier ($29/month, 3,291 active accounts)
+- Avg sessions per week: 7.8
+- Avg tasks created per week: 24.6
+- Avg team size: 4.7 members
+- Most used features: File attachments, task dependencies, reporting dashboard
+- Top complaint: Mobile app performance (corroborated by support tickets)
+- DAU/MAU: 22.4%
+
+### Enterprise Tier ($149-299/month, 626 active accounts)
+- Avg sessions per week: 18.4
+- Avg tasks created per week: 87.3
+- Avg team size: 31.2 members
+- Most used features: Reporting dashboard, automations, API integrations
+- Top complaint: Missing Salesforce/Teams integrations, lack of dedicated CSM
+- DAU/MAU: 31.7%
+- Average contract value: $6,840/year
+- Seat activation rate: 73.4% (26.6% of purchased seats not actively used)
+
+---
+
+## WEEKLY ACTIVE USER TREND (LAST 8 WEEKS)
+
+### All Users (Free + Paid)
+
+| Week | WAU | vs. Prior Week | Notes |
+|---|---|---|---|
+| Week of April 28 | 14,821 | baseline | |
+| Week of May 5 | 14,947 | +0.8% | Slight uptick from marketing campaign |
+| Week of May 12 | 14,832 | -0.8% | Stable |
+| Week of May 19 | 14,218 | -4.1% | v4.2.1 released May 28 — early impact |
+| Week of May 26 | 13,741 | -3.4% | Crash bug impact accelerating |
+| Week of June 2 | 13,412 | -2.4% | Continued decline |
+| Week of June 9 | 13,187 | -1.7% | Rate of decline slowing slightly |
+| Week of June 16 | 12,974 | -1.6% | Partial week (through June 20) |
+
+### Cumulative WAU Decline Since v4.2.1 Release
+- WAU at release (week of May 19): 14,218
+- WAU most recent (week of June 16): 12,974
+- Absolute decline: -1,244 weekly active users
+- Percentage decline: -8.7% in ~4 weeks
+
+### Paid Users Only (WAU)
+- Week of April 28: 8,934
+- Week of June 16: 8,211
+- Decline: -723 paid WAU (-8.1%)
+
+### New User Activation (WAU — users completing first project within 7 days of signup)
+- Week of April 28: 687
+- Week of June 16: 521
+- Decline: -24.2% — onboarding conversion declining week over week
