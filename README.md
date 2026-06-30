@@ -1,130 +1,121 @@
-# TaskFlow Product Health Monitor
+# 📊 TaskFlow Product Health Monitor
 
-A multi-agent voice AI system built in ElevenLabs that lets PMs and TPMs query product health data across user feedback, support tickets, and product metrics — by simply asking questions out loud.
+A multi-agent voice AI system built with ElevenLabs. PMs and TPMs query product health data — user feedback, support tickets, and product metrics — by simply asking questions out loud. No dashboards, no manual cross-referencing.
 
 ---
 
-## The Problem It Solves
+## 🧩 The Problem It Solves
 
-**TaskFlow** is a project management SaaS with 9,764 paying customers and $14.88M ARR experiencing growing pains:
+TaskFlow is a project management SaaS with 9,764 paying customers and $14.88M ARR experiencing growing pains:
 
 - Support ticket volume up 25% month-over-month
 - NPS dropped from 45 to 38
 - Mobile app usage down 15%
 - Free-to-paid conversion rate declined from 11.2% to 8.4%
 
-Answering questions like *"What are the top complaints this month?"* or *"Which enterprise accounts are at risk of churning?"* previously required opening three separate dashboards, exporting data, and cross-referencing manually — 30–60 minutes every time.
-
-**This agent eliminates that.** Ask the question out loud. Get the answer in seconds.
+Answering "What are the top complaints this month?" or "Which enterprise accounts are at risk of churning?" used to mean opening three dashboards and 30–60 minutes of manual work. This agent eliminates that.
 
 ---
 
-## Example Queries
+## 🧠 Workflow Overview
 
-- *"What are users complaining about the most?"*
-- *"Which enterprise accounts are at risk of churning?"*
-- *"What's happening with our conversion rate?"*
-- *"What does NPS data say about mobile performance?"*
-- *"Walk me through the free-to-paid conversion funnel."*
-
----
-
-## Architecture
-
-**5 nodes · 14 edges · No code**
+**5-node multi-agent architecture:**
 
 ```
 Start
-  └── Greeter (routes intent only — no KB, no hallucination)
-        ├── User Feedback Analyst
-        ├── Support Ticket Analyst
-        └── Product Metrics Analyst
-                    └── End
+    ↓
+Greeter Agent              → Identifies intent, routes only (no KB, no answers)
+    ↓
+User Feedback Analyst      → NPS, app reviews, interviews, in-app feedback
+Support Ticket Analyst     → Ticket volume, churn risk accounts, CSAT
+Product Metrics Analyst    → Conversion funnel, retention, DAU/MAU, benchmarks
+    ↓
+End
 ```
 
-**Routing:**
-- 3 forward edges (Greeter → each specialist)
-- 3 end edges (each specialist → End)
-- 6 cross-routing edges (all specialists ↔ bidirectional)
-- 1 Start → Greeter edge
-- **Total: 14 edges**
+🔁 6 cross-routing edges connect all three specialists bidirectionally — ask about NPS, then pivot to conversion rate, without restarting.
 
 ---
 
-## Specialist Agents
+## 🛠️ Tech Stack
 
-| Agent | Knowledge Base | Scope | Tone |
-|---|---|---|---|
-| User Feedback Analyst | KB_User_Feedback.txt | NPS scores and trends, detractor themes, app store reviews, user interview insights, in-app feedback | Empathetic — acknowledges user frustration before analysis |
-| Support Ticket Analyst | KB_Support_Tickets.txt | Ticket volume trends, category breakdowns, churn risk accounts, CSAT scores, escalation rates | Crisp and data-driven — operational decisions need facts fast |
-| Product Metrics Analyst | KB_Product_Metrics.txt | Conversion funnel, mobile DAU/MAU, retention cohorts, feature adoption, performance benchmarks | Precise and analytical — exact numbers, no vague language |
-
-**Greeter:** Routes intent only. No KB assigned. Never answers questions directly.
-
----
-
-## Knowledge Base
-
-Three domain-scoped knowledge base files with realistic synthetic data:
-
-- **KB_User_Feedback.txt** — NPS survey results (score 38, down from 45), detractor themes, iOS/Android app store reviews, 5 user interview transcripts, in-app feedback submissions with vote counts
-- **KB_Support_Tickets.txt** — 6-month ticket volume trend (25% MoM spike), category breakdown, top 10 ticket topics, 6 enterprise churn-risk accounts with names and open ticket counts, CSAT by agent, escalation rate trend
-- **KB_Product_Metrics.txt** — Mobile DAU/MAU with 8-week trend, free-to-paid conversion funnel (8.4% vs 11.2% baseline), 6-month retention cohorts, feature adoption for top 10 features, API latency benchmarks, WAU trend
-
-**KB scoping is strict** — each specialist only has access to its own file. No specialist sees all three.
+| Tool | Purpose |
+|------|---------|
+| ElevenLabs | Conversational voice AI platform |
+| Flash Model | Low-latency LLM tuned for voice |
+| Knowledge Base (scoped) | Domain-specific grounding per specialist |
+| LLM Edge Conditions | Intent-based routing logic |
 
 ---
 
-## Key Design Decisions
+## 📁 Files
 
-**Greeter as dispatcher, not concierge** — No KB on the Greeter. Routes on intent keywords only. Prevents hallucination at the entry point.
-
-**Strict KB scoping** — Each specialist sees exactly one file. Prevents information leakage between domains and keeps guardrails clean.
-
-**Cross-routing on all 6 edges** — Users can switch from asking about NPS to asking about conversion funnels without restarting the conversation. Every specialist hands off to every other.
-
-**Distinct specialist tones** — User Feedback Analyst is empathetic (users are people, not data points). Support Ticket Analyst is crisp (operational urgency). Product Metrics Analyst is precise (no hedging on numbers).
-
-**Guardrails in every specialist** — Out-of-scope questions get a polite redirect: *"That's outside my area — I focus on user feedback. For ticket data, ask about the support track."*
+| File | Description |
+|------|-------------|
+| `Build_Steps.md` | Step-by-step build instructions, system prompts, KB generation prompts |
+| `KB_User_Feedback.txt` | NPS trends, detractor themes, app store reviews, interviews, in-app feedback |
+| `KB_Support_Tickets.txt` | Ticket volume, category breakdown, churn risk accounts, CSAT, escalations |
+| `KB_Product_Metrics.txt` | Conversion funnel, DAU/MAU, retention cohorts, feature adoption, benchmarks |
+| `README.md` | Project documentation |
 
 ---
 
-## Stack
+## 🚀 How to Use
 
-- **Platform:** ElevenLabs Conversational AI
-- **Model:** Flash (low latency, voice-optimized)
-- **Architecture pattern:** Multi-agent orchestration with LLM-based intent routing
-- **Knowledge base:** Plain text files, domain-scoped per specialist
-- **Data:** Realistic synthetic data generated for TaskFlow (fictional SaaS product)
-
----
-
-## Files in This Repo
-
-```
-├── README.md
-├── Build_Steps.md                  # Step-by-step build instructions with all prompts
-├── KB_User_Feedback.txt            # NPS, reviews, interviews, in-app feedback
-├── KB_Support_Tickets.txt          # Zendesk analytics, churn risk accounts, CSAT
-└── KB_Product_Metrics.txt          # DAU/MAU, conversion funnel, retention, benchmarks
-```
+1. Clone or download this repo
+2. Open [ElevenLabs Agents](https://elevenlabs.io/app/agents)
+3. Create a blank agent and follow `Build_Steps.md` step by step
+4. Upload each KB `.txt` file to its corresponding specialist node
+5. Wire the 14 edges (3 forward, 3 end, 6 cross-routing, 1 start)
+6. Test in Preview mode with mic on
 
 ---
 
-## Business Impact
+## 💡 Example Use Case
+
+**Query:** "What are users complaining about the most?"
+
+**Agent routes to:** User Feedback Analyst
+
+**Response:** NPS at 38, down from 45 — top theme is mobile app performance, cited by 41% of detractors, with direct quotes pulled from app store reviews.
+
+**Follow-up:** "Which enterprise accounts are at risk of churning?"
+
+**Agent cross-routes to:** Support Ticket Analyst — names specific accounts, open ticket counts, and risk signals.
+
+---
+
+## 🔑 Key Design Decisions
+
+- **Greeter as dispatcher, not concierge** — No KB on the Greeter. Routes on intent keywords only.
+- **Strict KB scoping** — Each specialist sees exactly one file. No specialist has access to all three.
+- **Cross-routing on all 6 edges** — Full bidirectional handoff between specialists for natural topic switching.
+- **Distinct specialist tones** — Feedback Analyst is empathetic, Ticket Analyst is crisp, Metrics Analyst is precise.
+- **Guardrails baked into every prompt** — Out-of-scope questions get redirected, never guessed at.
+
+---
+
+## 📈 Business Impact
 
 | Metric | Before | After |
-|---|---|---|
-| Time to answer product health question | 30–60 min (manual) | ~30 seconds (voice query) |
+|--------|--------|-------|
+| Time to answer a product health question | 30–60 min (manual) | ~30 seconds (voice query) |
 | Dashboards required | 3 separate tools | 1 voice interface |
 | Churn risk visibility | Weekly manual review | On-demand voice query |
-| Cross-domain insight | Manual data joining | Automatic cross-routing |
 
 ---
 
-## Reusable Pattern
+## 👤 Author
 
-The multi-agent orchestration pattern used here — Greeter routing to domain specialists with scoped KB files and cross-routing edges — applies to any data-heavy operational context. Swap in your own KB files for any three data domains and the architecture works identically.
+**Praveen Kumar Jatta** — Senior Technical Program Manager | AI Automation Consultant
 
-**Related projects:**
-- [project-nightingale-launch-center](https://github.com/praveenjatta/project-nightingale-launch-center) — Same architecture applied to product launch operations (Technical Readiness, GTM & Marketing, Executive Briefing)
+- 🌐 [jattaai.com](https://jattaai.com)
+- 💼 [linkedin.com/in/praveenjatta](https://linkedin.com/in/praveenjatta)
+- 🐙 [github.com/praveenjatta](https://github.com/praveenjatta)
+- 📅 [Book a free discovery call](https://calendly.com/praveenjatta/free-ai-automation-discovery-call)
+
+---
+
+## 📄 License
+
+MIT License — free to use and modify with attribution.
